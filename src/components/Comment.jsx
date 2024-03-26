@@ -24,7 +24,7 @@ function Comment({content, onDeleteComment}){
                     <header>
                         <div className={styles.authorAndTime}>
                             <strong>Igor Barcelo</strong>
-                            <time title="01 de Março de 2024" dateTime='2024-03-01 02:05:00'>Cerca de 2h atrás</time>                    
+                            <time title="25 de Março de 2024" dateTime='2024-03-01 02:05:00'>Menos de 1h atrás</time>                    
                         </div>
 
                         <button onClick={handleDeleteComment} title='Deletar'>

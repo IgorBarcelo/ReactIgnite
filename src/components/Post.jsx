@@ -8,7 +8,7 @@ import styles from './Post.module.css';
 
 function Post({author, publishedAt, content}) {
     const [comments, setComments] = useState([
-        'Show!!'
+        
     ])
     const [newCommentText, setNewCommentText] = useState('')
 
@@ -59,7 +59,7 @@ function Post({author, publishedAt, content}) {
                     </div>
                 </div>
                 
-                <time title={publishedDateFormatted} dateTime="2024-03-01 02:05:00">
+                <time title={publishedDateFormatted} dateTime={publishedAt}>
                     {publishedDateRelativeToNow}
                 </time>
             </header>
@@ -98,6 +98,7 @@ function Post({author, publishedAt, content}) {
                             key={comment} 
                             content={comment}
                             onDeleteComment={deleteComment}
+                            //now={now}
                         />
                     );
                 })}

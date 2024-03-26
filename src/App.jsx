@@ -15,14 +15,13 @@ const posts=[
       role: 'Developer Master',
     },
     content: [
-      {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,',},
-      {type: 'paragraph', content: 'a illo quibusdam vel eius voluptate,'},
-      {type: 'paragraph', content: 'perspiciatis distinctio iste rem placeat,'},
+      {type: 'paragraph', content: 'Fala pessoal,'},
+      {type: 'paragraph', content: 'Meu primeiro projeto em ReactJS.',},
+      {type: 'paragraph', content: 'Primeiro de muitos!!!!'},
       {type: 'paragraph', content: 'illum labore error sint laborum rerum alias exercitationem ducimus consectetur.'},
-      {type: 'link', content: 'google.com'},
-      {type: 'link', content: 'orkut.com'},
+      {type: 'link', content: '#react#show#js#novoprojeto'},
     ],
-    publishedAt: new Date('2024-02-01 17:02:00'),
+    publishedAt: new Date('2024-03-24 17:02:00'),
   },
   {
     id: 2,
@@ -32,14 +31,10 @@ const posts=[
       role: 'Developer',
     },
     content: [
-      {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,',},
-      {type: 'paragraph', content: 'a illo quibusdam vel eius voluptate,'},
-      {type: 'paragraph', content: 'perspiciatis distinctio iste rem placeat,'},
-      {type: 'paragraph', content: 'illum labore error sint laborum rerum alias exercitationem ducimus consectetur.'},
-      {type: 'link', content: 'google.com'},
-      {type: 'link', content: 'orkut.com'},
+      {type: 'paragraph', content: 'Aeee rapaz',},
+      {type: 'paragraph', content: 'Meus parabéns irmao!! Ótimo trabalho'},
     ],
-    publishedAt: new Date('2022-02-03 20:02:00'),
+    publishedAt: new Date('2024-03-25 20:02:00'),
   }
 ]
 
