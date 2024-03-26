@@ -2,14 +2,12 @@ import {format, formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import { useState } from 'react';
 
-import Avatar from './Avatar';
-import Comment from './Comment';
+import Avatar from '../Avatar/Avatar';
+import Comment from '../Comment/Comment';
 import styles from './Post.module.css';
 
 function Post({author, publishedAt, content}) {
-    const [comments, setComments] = useState([
-        
-    ])
+    const [comments, setComments] = useState([])
     const [newCommentText, setNewCommentText] = useState('')
 
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
@@ -26,8 +24,12 @@ function Post({author, publishedAt, content}) {
     function handleCreateNewComment() {
         event.preventDefault()
 
-        
-        setComments([...comments, newCommentText]);
+        const newComment = {
+            text: newCommentText,
+            createdAt: new Date(),
+        }
+
+        setComments([...comments, newComment]);
         setNewCommentText('');
     }
 
@@ -42,7 +44,7 @@ function Post({author, publishedAt, content}) {
 
     function deleteComment(commentToDelete){
         const commentsWithoutDeletedOne = comments.filter(comment => {
-            return comment !== commentToDelete;
+            return comment.text !== commentToDelete.text;
         })
 
         setComments(commentsWithoutDeletedOne);
@@ -92,11 +94,11 @@ function Post({author, publishedAt, content}) {
             </form>
 
             <div className={styles.commentList}>
-                {comments.map(comment => {
+                {comments.map((comment, index) => {
                     return (
                         <Comment 
-                            key={comment} 
-                            content={comment}
+                            key={index} 
+                            comment={comment}
                             onDeleteComment={deleteComment}
                             //now={now}
                         />
