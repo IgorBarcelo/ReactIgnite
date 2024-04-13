@@ -1,9 +1,10 @@
 import { ThumbsUp, Trash } from 'phosphor-react';
 import styles from './Comment.module.css';
-import Avatar from './Avatar';
+import Avatar from '../Avatar/Avatar';
 import { useState } from 'react';
+import moment from 'moment';
 
-function Comment({content, onDeleteComment}){
+function Comment({comment, onDeleteComment}){
     const [like, setlike] = useState(0)
 
     function handleDeleteComment(){
@@ -24,7 +25,8 @@ function Comment({content, onDeleteComment}){
                     <header>
                         <div className={styles.authorAndTime}>
                             <strong>Igor Barcelo</strong>
-                            <time title="25 de Março de 2024" dateTime='2024-03-01 02:05:00'>Menos de 1h atrás</time>                    
+                            <span>{`${moment(comment.createdAt).calendar()}`}</span>                    
+                            {/* <span>{`${moment(comment.createdAt).locale('pt-br').format('L')} às ${moment(comment.createdAt).locale('pt-br').format('LT')}`}</span>                     */}
                         </div>
 
                         <button onClick={handleDeleteComment} title='Deletar'>
@@ -32,7 +34,7 @@ function Comment({content, onDeleteComment}){
                         </button>
                     </header>
 
-                    <p>{content}</p>
+                    <p>{comment.text}</p>
                 </div>
 
                 <footer>
