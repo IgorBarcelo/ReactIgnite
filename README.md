@@ -62,5 +62,4 @@ A aplicação estará disponível em:
 
 ##👨‍💻 Desenvolvedor
 
-Igor Barcelo
-🔗 github.com/IgorBarcelo
+🔗 [Igor Barcelo](https://github.com/IgorBarcelo)
