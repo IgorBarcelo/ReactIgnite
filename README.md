@@ -41,7 +41,7 @@ Depois de instalar as dependências, inicie o servidor de desenvolvimento com:
     ```bash
     npm run dev
 
-    ou
+ou
 
     ```bash
     yarn dev
