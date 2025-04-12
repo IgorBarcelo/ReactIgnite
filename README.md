@@ -27,10 +27,12 @@ Para acessar o projeto, siga os passos abaixo:
 3. **Instale as dependências:**
 
 Com npm:
+
     ```bash
     npm install
 
 Ou com yarn:
+
     ```bash
     yarn
 
