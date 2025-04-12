@@ -52,15 +52,15 @@ A aplicação estará disponível em:
 
 ## 🧰 Tecnologias Utilizadas
 
--React
+- React
 
--Vite
+- Vite
 
--JavaScript
+- JavaScript
 
--CSS Modules
+- CSS Modules
 
--ESLint
+- ESLint
 
 ##👨‍💻 Desenvolvedor
 
