@@ -4,8 +4,7 @@
 
 ## 📸 Demonstração
 
-> Adicione aqui uma imagem ou GIF da aplicação:
->
+
 > ![Demonstração do projeto](./public/demo.png)
 
 ---
