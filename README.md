@@ -28,24 +28,20 @@ Para acessar o projeto, siga os passos abaixo:
 
 Com npm:
 
-    ```bash
     npm install
 
 Ou com yarn:
 
-    ```bash
     yarn
 
-## 🚀 Executando o Projeto
+4. 🚀 Executando o Projeto
 
 Depois de instalar as dependências, inicie o servidor de desenvolvimento com:
 
-    ```bash
     npm run dev
 
 ou
 
-    ```bash
     yarn dev
 
 
