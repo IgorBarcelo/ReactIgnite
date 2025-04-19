@@ -5,7 +5,7 @@
 ## 📸 Demonstração
 
 
-> ![Demonstração do projeto](./public/demo.png)
+> ![Demonstração do projeto](https://github.com/IgorBarcelo/ReactIgnite/blob/main/public/demo.png?raw=true)
 
 ---
 
